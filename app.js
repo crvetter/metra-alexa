@@ -56,7 +56,7 @@ app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
-var appId = 'amzn1.echo-sdk-ams.app.655fae42-075f-4425-827b-8999daeb188a' //Amazon Echo App ID
+var appId = 'amzn1.ask.skill.9a34a885-a07c-4a8b-a2b0-062cde418c33' //Amazon Echo App ID
 var echoApp = new AmazonEchoApp(client, "marta-times", appId);
 
 echoApp.decorateAppWithRoutes('/', app);
